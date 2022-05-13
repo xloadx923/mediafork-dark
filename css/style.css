@@ -12,7 +12,7 @@
 
 body {
     margin: 0;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     background-color: var(--bg-color);
 }
@@ -160,7 +160,6 @@ button {
 }
 
 .hero-ttl {
-    font-family: 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
     font-size: min(7vw, 6rem);
     text-transform: uppercase;
@@ -205,17 +204,56 @@ button {
     font-size: 3rem;
 }
 
+
+/* ABOUT SECTION */
+
+.about {
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.about-text {
+    padding: 2rem;
+}
+
+.about-text-xl {
+    font-size: 3rem;
+    font-weight: bold;  
+}
+.about-text-highlight {
+    display: block;
+    color: #bdbf09;
+    text-decoration: underline;
+}
+.about-ttl-sm, .about-txt-sm {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2;
+}
+.about-txt-sm {
+    color: #5e6266;
+}
+
+
 /* SERVICES */
 
 .cards-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem;
+    grid-gap: 2rem;
+    padding: 0 2rem;
 }
 
 @media (min-width: 768px) {
     .cards-list {
-    grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem;
+        padding: 0;
     }
 }
 
@@ -227,7 +265,6 @@ button {
 }
 
 .card-ttl {
-    font-family: 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
     font-size: 2rem;
     line-height: 1.2;
