@@ -183,18 +183,34 @@ button {
     bottom: 2rem;
 }
 
+/* TITLES */
+
+.title {
+    text-align: center;
+    width: 100%;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+.title-top {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: val(--secondary-color);
+}
+.title-main {
+    font-size: 4rem;
+}
 
 /* SERVICES */
 
 .cards-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
 }
-.cards-list > li {
-    padding: 1rem;
-    width: 50%;
+
+@media (min-width: 768px) {
+    .cards-list {
+    grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .card {
