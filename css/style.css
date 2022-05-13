@@ -18,6 +18,10 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* HERO BANNER */
 
 .hero-banner {
@@ -55,4 +59,27 @@ ul {
     font-size: 2rem;
     color: var(--primary-color);
     margin-left: 1rem;
+}
+
+
+/* HEADER -> NAV */
+
+.nav {
+
+}
+
+.nav-burger, .nav-burger * {
+    color: var(--primary-color);
+}
+
+.nav-list {
+    display: none;
+}
+
+.nav-item {
+
+}
+
+.nav-link {
+
 }
