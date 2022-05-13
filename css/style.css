@@ -50,6 +50,10 @@ button {
     max-width: 1600px;
 }
 
+.section {
+    margin-bottom: 5rem;
+}
+
 /* HEADER */
 
 .header {
@@ -188,15 +192,17 @@ button {
 .title {
     text-align: center;
     width: 100%;
-    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 5rem;
 }
 .title-top {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    color: val(--secondary-color);
+    color: #bdbf09;
 }
 .title-main {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 /* SERVICES */
