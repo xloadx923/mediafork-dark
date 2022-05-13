@@ -13,6 +13,11 @@ body {
     color: #fff;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
 ul {
     margin: 0;
     list-style: none;
@@ -74,6 +79,7 @@ button {
 }
 
 .nav-burger {
+    font-size: 3rem;
     color: var(--primary-color);
 }
 
@@ -86,5 +92,25 @@ button {
 }
 
 .nav-link {
+
+}
+
+
+/* HEADER -> SOCIAL */
+
+.social {
+    display: none;
+
+}
+
+.social-list {
+
+}
+
+.social-item {
+
+}
+
+.social-link {
 
 }
