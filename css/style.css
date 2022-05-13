@@ -2,7 +2,8 @@
     font-size: 12px;
     --primary-color: #fb9179;
     --secondary-color: #bdbf09;
-    --main-bg-color: #151617;
+    --bg-color: #151617;
+    --bg-card: #313335;
 }
 
 * {
@@ -13,7 +14,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #fff;
-    background-color: --main-bg-color;
+    background-color: var(--bg-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +29,7 @@ p {
 
 ul {
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -40,15 +42,26 @@ button {
     background: none;
 }
 
+
+/* UTILITIES */
+
+.container {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
 /* HEADER */
 
 .header {
-    display: flex;
     width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.header-container {
+    display: flex;
     height: 70px;
     justify-content: space-between;
     padding: 1rem;
-    border-bottom: 1px solid #fff;
 }
 
 
@@ -168,4 +181,40 @@ button {
     font-size: 5rem;
     position: absolute;
     bottom: 2rem;
+}
+
+
+/* SERVICES */
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+.cards-list > li {
+    padding: 1rem;
+    width: 50%;
+}
+
+.card {
+    padding: 2rem;
+    background-color: #313335; /* replace with root val */
+    aspect-ratio: 2 / 3;
+    position: relative;
+}
+
+.card-ttl {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.2;
+
+}
+
+.card-icon {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    width: 4rem;
 }
