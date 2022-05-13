@@ -1,5 +1,6 @@
 :root {
     font-size: 12px;
+    --primary-color: #fb9179;
 }
 
 * {
@@ -8,7 +9,16 @@
 
 body {
     margin: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
 }
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+/* HERO BANNER */
 
 .hero-banner {
     width: 100%;
@@ -20,6 +30,9 @@ body {
     background-position: top center;
 }
 
+
+/* HEADER */
+
 .header {
     display: flex;
     width: 100%;
@@ -28,6 +41,18 @@ body {
     padding: 1rem;
 }
 
+
+/* HEADER -> LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
 .logo-img {
     height: 100%;
+}
+.logo-ttl {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-left: 1rem;
 }
