@@ -54,11 +54,16 @@ button {
     margin-bottom: 5rem;
 }
 
+
 /* HEADER */
 
 .header {
+    position: fixed;
+    background-color: #151617a0;
+    top: 0;
     width: 100%;
     border-bottom: 1px solid #fff;
+    z-index: 100;
 }
 
 .header-container {
@@ -137,7 +142,6 @@ button {
     background-image: url('../img/hero-bg-xl.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-position: top center;
 }
 
