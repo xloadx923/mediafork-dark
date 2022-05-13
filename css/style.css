@@ -1,6 +1,7 @@
 :root {
     font-size: 12px;
     --primary-color: #fb9179;
+    --secondary-color: #bdbf09;
 }
 
 * {
@@ -130,6 +131,8 @@ button {
 .hero-logo {
     width: 40%;
     max-width: 500px;
+    position: relative;
+    top: 7vw;
 }
 
 .hero-ttl {
@@ -138,11 +141,22 @@ button {
     font-size: 7vw;
     text-transform: uppercase;
     text-align: center;
+    position: relative;
+    z-index:2;
 }
 .hero-ttl > p {
     line-height: 6vw;
 }
 
 .button-scroll {
-
+    display: block;
+    background-color: var(--secondary-color);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
 }
