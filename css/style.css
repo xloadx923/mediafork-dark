@@ -128,7 +128,8 @@ button {
 }
 
 .hero-logo {
-    max-width: 100%;
+    width: 40%;
+    max-width: 500px;
 }
 
 .hero-ttl {
@@ -136,6 +137,10 @@ button {
     font-weight: 900;
     font-size: 7vw;
     text-transform: uppercase;
+    text-align: center;
+}
+.hero-ttl > p {
+    line-height: 6vw;
 }
 
 .button-scroll {
