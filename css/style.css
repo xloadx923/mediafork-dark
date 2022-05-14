@@ -376,6 +376,7 @@ button:focus {
 
 .portfolio-grid > li {
     position: relative;
+    font-size: 0;
 }
 
 .portfolio-block {
