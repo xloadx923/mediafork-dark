@@ -42,6 +42,13 @@ button {
     background: none;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 
 /* UTILITIES */
 
@@ -412,10 +419,11 @@ button {
 }
 
 .contact-text {
-    background-color: #313335;
+    width: 100%;
     border: none;
     font-size: 1.5rem;
     padding: 1rem;
+    background-color: #313335;
     transition: background .2s ease-in-out;
     transition: color .2s ease-in-out;
     color: #fff;
@@ -433,4 +441,39 @@ button {
 
 .contact-consent-check {
     margin-right: 2rem;
+}
+
+.button {
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #bdbf09;
+    transition: background .2s ease-in-out;
+    border-radius: .5rem;
+}   
+
+.button:hover {
+    background-color: #fb9179;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .contact-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+    }
+
+    .contact-message {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+    }
+
+    .contact-submit {
+        display: block;
+        text-align: right;
+    }
+
 }
