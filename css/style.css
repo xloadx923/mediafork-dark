@@ -70,6 +70,7 @@ button {
     display: flex;
     height: 70px;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
 }
 
@@ -82,7 +83,7 @@ button {
     max-width: 50%;
 }
 .logo-img {
-    height: 100%;
+    width: 46px;
 }
 .logo-ttl {
     font-size: 2rem;
@@ -104,6 +105,9 @@ button {
 
 .nav-list {
     display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .nav-item {
@@ -111,7 +115,8 @@ button {
 }
 
 .nav-link {
-
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 
@@ -119,11 +124,13 @@ button {
 
 .social {
     display: none;
-
+    width: 180px;
 }
 
 .social-list {
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .social-item {
@@ -131,7 +138,21 @@ button {
 }
 
 .social-link {
+    color: #fb9179;
+    font-size: 1.5rem;
+}
 
+@media screen and (min-width: 768px) {
+    .nav-burger {
+        display: none; 
+    }
+    .nav-list {
+        display: flex;
+    }
+    .social {
+        display: block;
+    }
+    
 }
 
 /* HERO BANNER */
