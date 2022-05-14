@@ -126,29 +126,6 @@ button:focus {
     font-size: 1.5rem;
 }
 
-
-/* HEADER -> SOCIAL */
-
-.social {
-    display: none;
-    width: 180px;
-}
-
-.social-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.social-item {
-
-}
-
-.social-link {
-    color: #fb9179;
-    font-size: 1.5rem;
-}
-
 @media screen and (min-width: 768px) {
     .nav-burger {
         display: none; 
@@ -156,10 +133,6 @@ button:focus {
     .nav-list {
         display: flex;
     }
-    .social {
-        display: block;
-    }
-    
 }
 
 /* HERO BANNER */
@@ -491,3 +464,27 @@ button:focus {
     }
 
 }
+
+
+/* FOOTER */
+
+
+/* FOOTER - SOCIAL */
+
+.social {
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-item {
+}
+
+.social-link {
+    color: #fb9179;
+    font-size: 1.5rem;
+}
+
