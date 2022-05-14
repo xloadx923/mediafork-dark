@@ -7,9 +7,8 @@
     --primary-color: #fb9179;
     --secondary-color: #bdbf09;
     --main-bg: #151617;
-    --grey-bg: #313335;
-    --grey-text: #7a8085;
-    --active-link: #d2d2d2;
+    --dark-grey: #313335;
+    --light-grey: #7a8085;
 
     /* Special colors */
     --transparent-border: rgba(255, 255, 255, 0.5);
@@ -19,6 +18,7 @@
     --twitter-color: #55acee;
     --instagram-color: #ac2bac;
 }
+
 
 /* NORMALIZE */
 
@@ -261,7 +261,7 @@ button:focus {
     line-height: 2;
 }
 .about-txt-sm {
-    color: var(--grey-text);
+    color: var(--light-grey);
 }
 
 @media screen and (min-width: 768px) {
@@ -296,7 +296,7 @@ button:focus {
 
 .card {
     padding: 2rem;
-    background-color: var(--grey-bg);
+    background-color: var(--dark-grey);
     aspect-ratio: 2 / 3;
     position: relative;
     transition: background .3s ease-in-out;
@@ -423,7 +423,7 @@ button:focus {
 }
 
 .contact-label {
-    color: var(--grey-text);
+    color: var(--light-grey);
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -437,13 +437,13 @@ button:focus {
     border: none;
     font-size: 1.5rem;
     padding: 1rem;
-    background-color: var(--grey-bg);
+    background-color: var(--dark-grey);
     transition: background .3s, color .3s;
     transition-timing-function: ease-in-out;
     color: #fff;
 }
 .contact-text:focus  {
-    background-color: var(--grey-text);
+    background-color: var(--light-grey);
     color: #000;
 }
 
