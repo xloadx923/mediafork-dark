@@ -82,9 +82,9 @@ button:focus {
 
 .header {
     position: fixed;
-    background-color: rgba(0, 0, 0, .5);
     top: 0;
     width: 100%;
+    background-color: rgba(0, 0, 0, .5);
     border-bottom: 1px solid var(--transparent-border);
     z-index: 100;
 }
@@ -453,7 +453,7 @@ button:focus {
     align-items: flex-start;
 }
 
-.contact-consent-check {
+.contact-checkbox {
     margin-right: 2rem;
 }
 
@@ -517,10 +517,7 @@ button:focus {
 }
 
 
-/* FOOTER - SOCIAL */
-
-.footer-legal {
-}
+/* FOOTER - LEGAL */
 
 .footer-legal > li {
     display: inline;
@@ -534,10 +531,10 @@ button:focus {
     color: #fff;
 }
 
-
 .footer-legal-link:hover {
     text-decoration: underline;
 }
+
 
 /* FOOTER - SOCIAL */
 
@@ -566,7 +563,6 @@ button:focus {
 .bg-facebook {
     background-color: var(--facebook-color);
 }
-
 
 .bg-twitter {
     background-color: var(--twitter-color);
