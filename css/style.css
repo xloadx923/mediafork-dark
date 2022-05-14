@@ -1,3 +1,5 @@
+@import url(font-awesome.min.css);
+
 :root {
     /* Sizes */
     font-size: 12px;
@@ -20,7 +22,7 @@
 }
 
 
-/* NORMALIZE */
+/* NORMALIZER */
 
 * {
     box-sizing: border-box;
@@ -286,7 +288,7 @@ button:focus {
     padding: 0 2rem;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .cards-list {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 3rem;
@@ -340,7 +342,7 @@ button:focus {
     width: 100%;
 }
 
-@media (min-width: 540px) and  (max-width: 768px) {
+@media screen and (min-width: 540px) and  (max-width: 768px) {
     .portfolio-grid {
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 19vw;
@@ -356,7 +358,7 @@ button:focus {
 }
 
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .portfolio-grid {
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: min(15vw, 18em);
@@ -453,6 +455,10 @@ button:focus {
     align-items: flex-start;
 }
 
+.contact-consent .contact-label {
+    font-size: 1rem;
+}
+
 .contact-checkbox {
     margin-right: 2rem;
 }
@@ -473,7 +479,7 @@ button:focus {
     cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .contact-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -510,7 +516,7 @@ button:focus {
     background-attachment: fixed;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .footer {
         padding: 1rem 2rem;
     }
@@ -572,7 +578,7 @@ button:focus {
     background-color: var(--instagram-color);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .social {
         width: auto;
         order: 3;
