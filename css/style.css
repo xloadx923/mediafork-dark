@@ -470,6 +470,38 @@ button:focus {
 
 /* FOOTER */
 
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-top: 1px solid #fff;
+}
+
+
+/* FOOTER - SOCIAL */
+
+.footer-legal {
+    /*display: flex;*/
+}
+
+.footer-legal > li {
+    display: inline;
+}
+.footer-legal > li:not(:last-child)::after {
+    content: "|";
+    padding: 0 1rem;
+}
+
+.footer-legal-link {
+    color: #fff;
+}
+
+
+.footer-legal-link:hover {
+    text-decoration: underline;
+}
 
 /* FOOTER - SOCIAL */
 
@@ -480,6 +512,7 @@ button:focus {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 2rem;
 }
 
 .social-item {
