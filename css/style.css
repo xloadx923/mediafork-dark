@@ -104,6 +104,7 @@ button:focus {
 .nav-burger {
     font-size: 3rem;
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .nav-list {
