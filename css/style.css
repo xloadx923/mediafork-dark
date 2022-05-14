@@ -47,11 +47,11 @@ button {
 
 .container {
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1350px;
 }
 
 .section {
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 
 
@@ -197,7 +197,7 @@ button {
     width: 100%;
     font-weight: 900;
     line-height: 1.2;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 .title-top {
     font-size: 1.5rem;
@@ -318,7 +318,7 @@ button {
 @media (min-width: 768px) {
     .portfolio-grid {
         grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: 15vw;
+        grid-auto-rows: min(15vw, 18em);
     }
     .portfolio-grid > li:nth-child(1) {
         grid-column-start: span 2;
