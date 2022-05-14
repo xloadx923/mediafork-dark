@@ -71,7 +71,7 @@ button {
     height: 70px;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 
@@ -381,4 +381,56 @@ button {
     font-size: 3rem;
     color: #bdbf09; 
     text-decoration: underline;
+}
+
+
+/* CONTACT FORM */
+
+.contact-form {
+    padding: 0 2rem;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    color: #95999d;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-label.required::after {
+    content: "*";
+}
+
+.contact-text {
+    background-color: #313335;
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: background .2s ease-in-out;
+    transition: color .2s ease-in-out;
+    color: #fff;
+}
+.contact-text:focus  {
+    background-color: #95999d;
+    color: #000;
+}
+
+.contact-consent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.contact-consent-check {
+    margin-right: 2rem;
 }
