@@ -289,7 +289,7 @@ button:focus {
     font-weight: 900;
     font-size: 2rem;
     line-height: 1.2;
-
+    word-break: break-word;
 }
 
 .card-icon {
@@ -478,6 +478,17 @@ button:focus {
     gap: 2rem;
     padding: 2rem;
     border-top: 1px solid #fff;
+    background-image: url('../img/hero-bg-xl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 1rem 2rem;
+    }
 }
 
 
