@@ -479,7 +479,7 @@ button:focus {
 .social-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .social-item {
@@ -488,5 +488,32 @@ button:focus {
 .social-link {
     color: #fb9179;
     font-size: 1.5rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    aspect-ratio: 1/1;
+    border-radius: 4rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background .3s ease-in-out;
+}
+
+.bg-color-facebook:hover {
+    background-color: #3b5998;
+}
+
+
+.bg-color-twitter:hover {
+    background-color: #55acee;
+}
+
+
+.bg-color-instagram:hover {
+    background-color: #ac2bac;
 }
 
