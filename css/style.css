@@ -14,7 +14,7 @@
     --light-grey: #7a8085;
 
     /* Special colors */
-    --transparent-border: rgba(255, 255, 255, 0.5);
+    --transparent-white: rgba(255, 255, 255, 0.5);
 
     /* Social colors */
     --facebook-color: #3b5998;
@@ -91,7 +91,7 @@ body.template-dark {
     top: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, .5);
-    border-bottom: 1px solid var(--transparent-border);
+    border-bottom: 1px solid var(--transparent-white);
     z-index: 100;
 }
 
@@ -136,17 +136,31 @@ body.template-dark {
 }
 
 .nav-link {
+    display: inline-block;
+    position: relative;
     color: #fff;
     font-size: 1.5rem;
-    border-bottom: 3px solid rgba(0, 0, 0, 0);
     transition: border .3s ease-in-out;
 }
 
-.nav-link.active, .nav-link:hover  {
-    border-bottom-color: var(--primary-color);
+.nav-link::after {
+    content: "";
+    display: block;
+    height: .25rem;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    background-color: var(--primary-color);
+    transition: width .3s ease;
 }
+
+.nav-link.active::after, .nav-link:hover::after  {
+    width: 100%;
+}
+
 .nav-link.active {
-    opacity: .7;
+    color: var(--transparent-white);
 }
 
 @media screen and (min-width: 768px) {
@@ -519,7 +533,7 @@ body.template-dark {
     justify-content: space-between;
     gap: 2rem;
     padding: 2rem;
-    border-top: 1px solid var(--transparent-border);
+    border-top: 1px solid var(--transparent-white);
     background-image: url('../img/hero-bg-sm.jpg');
     background-repeat: no-repeat;
     background-size: cover;
