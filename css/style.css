@@ -213,14 +213,13 @@ body.template-dark {
     font-size: 5rem;
     position: absolute;
     bottom: 2rem;
-    transition: background .3s, width .3s, height .3s;
-    transition-timing-function: ease-in-out;
+    transition: background .3s, transform .3s;
+    transition-timing-function: ease;
 }
 
 .button-scroll:hover {
+    transform: scale(1.5);
     background-color: var(--primary-color);
-    width: 6rem;
-    height: 6rem;
 }
 
 /* TITLES */
