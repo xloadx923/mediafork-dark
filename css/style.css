@@ -20,6 +20,10 @@
     --facebook-color: #3b5998;
     --twitter-color: #55acee;
     --instagram-color: #ac2bac;
+
+    /* Transistion */
+    --transition-duration: .5s;
+    --transition-function: ease;
 }
 
 
@@ -140,7 +144,7 @@ body.template-dark {
     position: relative;
     color: #fff;
     font-size: 1.5rem;
-    transition: border .3s ease-in-out;
+    transition: border var(--transition-duration) var(--transition-function);
 }
 
 .nav-link::after {
@@ -227,8 +231,9 @@ body.template-dark {
     font-size: 5rem;
     position: absolute;
     bottom: 2rem;
-    transition: background .3s, transform .3s;
-    transition-timing-function: ease;
+    transition: background var(--transition-duration), transform var(--transition-duration);
+    transition-timing-function: var(--transition-function);
+    
 }
 
 .button-scroll:hover {
@@ -317,7 +322,7 @@ body.template-dark {
     background-color: var(--dark-grey);
     aspect-ratio: 2 / 3;
     position: relative;
-    transition: background .3s ease-in-out;
+    transition: background var(--transition-duration) var(--transition-function);
 }
 
 .card-ttl {
@@ -325,7 +330,7 @@ body.template-dark {
     font-size: 2rem;
     line-height: 1.2;
     word-break: break-word;
-    transition: color .3s ease-in-out;
+    transition: color var(--transition-duration) var(--transition-function);
 }
 
 .card-icon {
@@ -421,7 +426,7 @@ body.template-dark {
     .portfolio-block {
         align-items: center;
         opacity: 0;
-        transition: opacity 0.5s ease-out;
+        transition: opacity var(--transition-duration) var(--transition-function);
     }
     .portfolio-block:hover {    
         opacity: 1;
@@ -466,8 +471,8 @@ body.template-dark {
     font-size: 1.5rem;
     padding: 1rem;
     background-color: var(--dark-grey);
-    transition: background .3s, color .3s;
-    transition-timing-function: ease-in-out;
+    transition: background var(--transition-duration), color var(--transition-duration);
+    transition-timing-function: var(--transition-function);
     color: #fff;
 }
 .contact-text:focus  {
@@ -496,7 +501,7 @@ body.template-dark {
     text-transform: uppercase;
     color: #fff;
     background-color: var(--secondary-color);
-    transition: background .3s ease-in-out;
+    transition: background var(--transition-duration) var(--transition-function);
     border-radius: .5rem;
 }   
 
@@ -613,7 +618,7 @@ body.template-dark {
 
     .social-link {
         background-color: rgba(0, 0, 0, 0);
-        transition: background .3s ease-in-out;
+        transition: background var(--transition-duration) var(--transition-function);
     }
 
     .bg-facebook:hover {
