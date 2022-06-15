@@ -644,16 +644,18 @@ body.template-dark {
         justify-content: flex-start;
         gap: 0;
         height: 100vh;
-        font-size: 2rem;
-        background-color: rgba(82, 80, 80, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
     }
     .nav-list.active li{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100vw;
-        height: 5rem;
-        border-bottom: solid gray 1px;
+        height: 7.2rem;
+        border-bottom: solid gray 1px;;
+    }
+    .nav-list.active li a{
+        font-size: 2.5rem;
     }
     .nav-list.active li:nth-last-of-type(1){
         border-bottom: solid gray 1px;

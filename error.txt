@@ -1,0 +1,101 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+Testez le nouveau système multiplateforme PowerShell https://aka.ms/pscore6
+
+PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git branch
+* (HEAD detached at origin/master)
+M       css/style.css
+A       error.txt
+M       js/script.js
+Your branch is up to date with 'origin/master'.
+PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git add *
+PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git commit -m "apply background transparent to navList active + layout's li links"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+
+to set your account's default identity.
+
+fatal: unable to auto-detect email address (got 'xload@SERV-PROG1.(none)')
+PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git config --global user.mail "xloadx923@msnl.com"
+PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git config --global user.name "Yann Guichard"
+PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git add * 
+PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git commit -m "apply background transparent to navList active + layout's li links"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'xload@SERV-PROG1.(none)')
+PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git branch
+  main
+* master
+PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git config --list --show-origin
+file:C:/Program Files/Git/etc/gitconfig diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig core.symlinks=true
+file:C:/Program Files/Git/etc/gitconfig pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig credential.helper=manager-core
+file:C:/Program Files/Git/etc/gitconfig credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig init.defaultbranch=master
+file:C:/Users/xload/.gitconfig  core.editor="C:\Users\xload\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+file:C:/Users/xload/.gitconfig  user.name=Yann Guichard
+file:C:/Users/xload/.gitconfig  user.mail=xloadx923@msnl.com
+file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=false
+file:.git/config        core.bare=false
+file:.git/config        core.logallrefupdates=true
+file:.git/config        core.ignorecase=true
+file:.git/config        remote.origin.url=https://github.com/xloadx923/mediafork-dark
+:...skipping...
+file:C:/Program Files/Git/etc/gitconfig diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig core.symlinks=true
+file:C:/Program Files/Git/etc/gitconfig pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig credential.helper=manager-core
+file:C:/Program Files/Git/etc/gitconfig credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig init.defaultbranch=master
+file:C:/Users/xload/.gitconfig  core.editor="C:\Users\xload\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+file:C:/Users/xload/.gitconfig  user.name=Yann Guichard
+file:C:/Users/xload/.gitconfig  user.mail=xloadx923@msnl.com
+file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=false
+file:.git/config        core.bare=false
+file:.git/config        core.logallrefupdates=true
+file:.git/config        core.ignorecase=true
+file:.git/config        remote.origin.url=https://github.com/xloadx923/mediafork-dark
+file:.git/config        remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config        user.mail=xloadx923@msn.com
+file:.git/config        user.name=Yann Guichard
+file:.git/config        branch.main.remote=origin
+file:.git/config        branch.main.merge=refs/heads/main
+file:.git/config        branch.master.remote=origin
+file:.git/config        branch.master.merge=refs/heads/master
+file:.git/config        remote.master.url=https://github.com/xloadx923/mediafork-dark
+file:.git/config        remote.master.fetch=+refs/heads/*:refs/remotes/master/*
