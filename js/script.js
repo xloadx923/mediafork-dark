@@ -1,8 +1,14 @@
 const burger = document.querySelector('.nav-burger');
 
-burger.addEventListener('click', function(event){
-    document.querySelector('body').classList.toggle('active');
-    document.querySelector('.nav-list').classList.toggle('active');
-    burger.querySelector('i').classList.toggle("fa-bars");
-    burger.querySelector('i').classList.toggle("fa-chevron-up");
-});
+
+function toggleClass(racine,obj,toggleClass){
+    racine.querySelector(obj).classList.toggle(toggleClass);
+}
+function burgerToggle(){
+    toggleClass(document,'body','active');
+    toggleClass(document,'.nav-list','active');
+    toggleClass(this,'i',"fa-bars");
+    toggleClass(this,'i',"fa-chevron-up");
+}
+
+burger.addEventListener('click', burgerToggle);
