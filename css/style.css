@@ -635,6 +635,9 @@ body.template-dark {
 
 @media screen and (max-width: 767px) {
 
+    body.active{
+        overflow:hidden;
+    }
     .nav-list.active{
         position: absolute;
         left: 0;
