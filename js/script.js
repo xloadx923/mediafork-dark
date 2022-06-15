@@ -1,6 +1,9 @@
 const burger = document.querySelector('.nav-burger');
-console.log(burger)
-
 burger.addEventListener('click', function(event){
-    document.querySelector('.nav-list').style = "display: block; position: absolute;z-index: 100;";
+    document.querySelector('body').style = "overflow:hidden;";
+    document.querySelector('.nav-list').classList.toggle('active');
+    document.querySelector('.header-container').classList.toggle('active');
+
+    // document.querySelector('.nav-burger i').classList.add("fa");
+    // document.querySelector('.nav-burger i').classList.add("fa-chevron-up");
 });
