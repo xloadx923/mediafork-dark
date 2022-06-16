@@ -9,9 +9,16 @@
     --primary-color: #fb9179;
     --secondary-color: #bdbf09;
     --main-bg: #151617;
+    --black-color: rgb(0,0,0);
     --dark-grey: #313335;
     --dark-grey-transparent: rgba(49, 51, 53, 0.7);
     --light-grey: #7a8085;
+
+    /* NavLIst */
+    --dark-black-transparent: rgba(0, 0, 0, 0.7);
+    
+
+    /* Services */
 
     /* Special colors */
     --transparent-white: rgba(255, 255, 255, 0.5);
@@ -644,14 +651,14 @@ body.template-dark {
     .nav-list.active{
         position: absolute;
         left: 0;
-        top: 72.5px;
+        top: 6.04rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 0;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: var(--dark-black-transparent);
     }
     .nav-list.active li{
         display: flex;
@@ -677,5 +684,21 @@ body.template-dark {
     }
     .nav-list.active li:nth-last-of-type(5){
         border-top: none;
+    }
+
+    .modalServices{
+        position: absolute;
+        z-index: 510;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--black-color);
+        width: auto;
+        height: ;
+        padding: 10px;
+    }
+    .titleModal{
+        color: var(--secondary-color);
     }
 }
