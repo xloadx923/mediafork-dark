@@ -276,7 +276,7 @@ body.template-dark {
 
 .about-text-xl {
     font-size: 3rem;
-    font-weight: bold;  
+    font-weight: bold;
 }
 .about-text-highlight {
     display: block;
@@ -423,7 +423,7 @@ body.template-dark {
     padding: 1rem;
     font-weight: bold;
     font-size: 1.5rem;
-    color: #fff; 
+    color: #fff;
     background-color: var(--dark-grey-transparent);
 }
 
@@ -433,12 +433,12 @@ body.template-dark {
         opacity: 0;
         transition: opacity var(--transition-duration) var(--transition-function);
     }
-    .portfolio-block:hover {    
+    .portfolio-block:hover {
         opacity: 1;
     }
     .portfolio-brand {
         font-size: 2rem;
-        color: #fff; 
+        color: #fff;
     }
 }
 
@@ -647,6 +647,7 @@ body.template-dark {
     display: flex;
     align-content: center;
     justify-content: center;
+    width: 71%;
     height: 465px;
 }
 .modalServices{
@@ -662,14 +663,14 @@ body.template-dark {
 }
 .backModalImage{
     position: absolute;
-    z-index: -1;
+    z-index: 479;
     opacity: 0.2;
 }
 .backModalImage img{
     display: flex;
     flex-direction: row;
     left: 0;
-    width: 60%;
+    width: 70%;
     height: auto;
 }
 .titleModal{
@@ -691,7 +692,7 @@ body.template-dark {
 }
 .close{
     color: white;
-    margin-top: -9.5%;
+    margin: -8% 0.5% 0 0;
     text-align: right;
 }
 .close i{
@@ -706,13 +707,10 @@ body.template-dark {
     body.active{
         overflow:hidden;
     }
-    .nav-list{
-        transition: 0% 2s linear;
-    }
     .nav-list.active{
         position: absolute;
+        top: 72.5px;
         left: 0;
-        top: 6.04rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -720,24 +718,24 @@ body.template-dark {
         width: 100vw;
         height: 100vh;
         background-color: var(--dark-black-transparent);
-        animation: upDown linear .3s;
+        animation: 0.5s ease upDown;
     }
     .nav-list.active li{
+        width: 100vw;
+        height: 7.2rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100vw;
-        height: 7.2rem;
         border-bottom: solid gray 1px;
     }
 
     @keyframes upDown {
-        0% { height: 0;font-size: 0.1rem; }
-        100% { height: 100vh;font-size: 7.5rem; }
+        0% { height: 0; }
+        100% { height: 100vh; }
     }
     @keyframes downUp {
-        0% { height: 100vh;font-size: 7.5rem; }
-        100% { height: 0;font-size: 0.1rem; }
+        0% { height: 100vh; }
+        100% { height: 0vh; }
     }
 
     .nav-list.active li a{
