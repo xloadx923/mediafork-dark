@@ -24,7 +24,7 @@ to set your account's default identity.
 fatal: unable to auto-detect email address (got 'xload@SERV-PROG1.(none)')
 PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git config --global user.mail "xloadx923@msnl.com"
 PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git config --global user.name "Yann Guichard"
-PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git add * 
+PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git add *
 PS G:\00 - AFPA\Javascript\00-Guillaume JS\Kit Git\mediafork-dark> git commit -m "apply background transparent to navList active + layout's li links"
 Author identity unknown
 
