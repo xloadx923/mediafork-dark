@@ -17,13 +17,22 @@ function burgerToggle(){
 function displayService(){
     services.forEach(function (service){
         service.addEventListener('click', function(event){
+            const modalServices = document.querySelector('.modalServices');
+            if(modalServices) modalServices.remove();
             let HTML = "";
+            const contModal = document.createElement('div');
+            contModal.classList.add('contModalServices');
             const modal = document.createElement('div');
             modal.classList.add('modalServices');
+            HTML += `<div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>`;
+            HTML += `<div class="backModalImage"><img src="../img/icon-web.png"></div>`;
             HTML += `<div class="titleModal">${service.querySelector('.card-ttl').innerText}</div>`;
             HTML += `<div class="textModal">${service.querySelector('.card-ttl').dataset.text}</div>`;
             modal.innerHTML = HTML;
-            this.parentElement.appendChild(modal);
+
+            contModal.appendChild(modal);
+            this.parentElement.appendChild(contModal);
+            document.querySelector('.close').addEventListener('click', () => contModal.remove());
         });
     });
 }

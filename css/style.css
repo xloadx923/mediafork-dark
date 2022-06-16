@@ -16,7 +16,6 @@
 
     /* NavLIst */
     --dark-black-transparent: rgba(0, 0, 0, 0.7);
-    
 
     /* Services */
 
@@ -640,6 +639,68 @@ body.template-dark {
     }
 }
 
+/* MES SERVICES */
+
+.contModalServices{
+    position: absolute;
+    z-index: 480;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 465px;
+}
+.modalServices{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background: var(--black-color);
+    justify-content: center;
+    padding: 0.5%;
+    font-size: 175%;
+    width: 95%;
+    height: 400px;
+}
+.backModalImage{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+}
+.backModalImage img{
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    width: 60%;
+    height: auto;
+}
+.titleModal{
+    display: flex;
+    align-self: center;
+    font-weight: bold;
+    color: var(--secondary-color);
+    padding: 1% 0 5.5% 0;
+    justify-self: flex-start;
+    font-size: 115%;
+}
+.textModal{
+    display: flex;
+    align-self: center;
+    padding: 1.5rem 0 6.5rem 0;
+    justify-self: flex-end;
+    text-align: center;
+    width: 76%;
+}
+.close{
+    color: white;
+    margin-top: -9.5%;
+    text-align: right;
+}
+.close i{
+    right: 0;
+    width: 20px;
+    height: auto;
+}
+/* MENU */
+
 @media screen and (max-width: 767px) {
 
     body.active{
@@ -659,6 +720,7 @@ body.template-dark {
         width: 100vw;
         height: 100vh;
         background-color: var(--dark-black-transparent);
+        animation: upDown linear .3s;
     }
     .nav-list.active li{
         display: flex;
@@ -669,11 +731,13 @@ body.template-dark {
         border-bottom: solid gray 1px;
     }
 
-    @keyframes displayLI {
+    @keyframes upDown {
         0% { height: 0;font-size: 0.1rem; }
-        25% { height: 21.5px;font-size: 1.5rem; }
-        50% { height: 43px;font-size: 3.75rem; }
-        100% { height: 86px;font-size: 7.5rem; }
+        100% { height: 100vh;font-size: 7.5rem; }
+    }
+    @keyframes downUp {
+        0% { height: 100vh;font-size: 7.5rem; }
+        100% { height: 0;font-size: 0.1rem; }
     }
 
     .nav-list.active li a{
@@ -686,19 +750,4 @@ body.template-dark {
         border-top: none;
     }
 
-    .modalServices{
-        position: absolute;
-        z-index: 510;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--black-color);
-        width: auto;
-        height: ;
-        padding: 10px;
-    }
-    .titleModal{
-        color: var(--secondary-color);
-    }
 }
