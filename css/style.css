@@ -703,13 +703,16 @@ body.template-dark {
     width: 20px;
     height: auto;
 }
-/* MENU */
 
 @media screen and (max-width: 767px) {
-
+    .button-scroll.active{
+        transform: none;
+        background-color: var(--secondary-color);
+    }
     body.overflow{
         overflow-y:hidden;
     }
+    /* MENU */
     .nav-list{
         position: absolute;
         z-index: -1;

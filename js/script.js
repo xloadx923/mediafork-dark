@@ -10,6 +10,14 @@ function toggleClass(racine,obj,state){
     else racine.classList.toggle(state)
 }
 
+/* BONUS POUR EVITER UN VILAIN GROS BOUTON ORANGE SUR LA VERSION MOBILE */
+function modifButton(){
+    const buttonScroll = document.querySelector('.button-scroll');
+    buttonScroll.addEventListener('click', function(event){
+        this.classList.add('active');
+    });
+}
+
 function burgerToggle(){
     toggleClass(mobileIcon,false,"fa-bars");
     toggleClass(mobileIcon,false,"fa-chevron-up");
@@ -56,4 +64,5 @@ mainNav.addEventListener('click', function(event) {
 //     }
 // });
 
+modifButton(); /* BONUS */
 displayService();
