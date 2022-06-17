@@ -712,6 +712,7 @@ body.template-dark {
     }
     .nav-list{
         position: absolute;
+        z-index: -1;
         top: -100vh;
         left: 0;
         width: 100%;
@@ -740,7 +741,7 @@ body.template-dark {
         height: 820px;
         font-size: 1.5rem;
     }
-    
+
     .modalServices{
         height: 745px;
         justify-content: space-between;
