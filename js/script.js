@@ -1,5 +1,9 @@
-const burger = document.querySelector('.nav-burger');
-const services = document.querySelectorAll('#services .cards-list li');
+const mobileButton = document.getElementById('mobile-button');
+const mobileIcon = document.getElementById('mobile-icon');
+
+const mainNav = document.getElementById('main-nav');
+const mainLinks = mainNav.querySelector('li a');
+
 
 function toggleClass(racine,obj,state){
     if(obj) racine.querySelector(obj).classList.toggle(state);
@@ -7,13 +11,15 @@ function toggleClass(racine,obj,state){
 }
 
 function burgerToggle(){
-    toggleClass(document,'body','active');
-    toggleClass(document,'.nav-list','active');
-    
-    toggleClass(this,'i',"fa-bars");
-    toggleClass(this,'i',"fa-chevron-up");
+    toggleClass(mobileIcon,false,"fa-bars");
+    toggleClass(mobileIcon,false,"fa-chevron-up");
+}
+function toggleNav(){
+    mainNav.classList.toggle('display');
+    burgerToggle();
 }
 
+const services = document.querySelectorAll('#services .cards-list li');
 function displayService(){
     services.forEach(function (service){
         service.addEventListener('click', function(event){
@@ -38,6 +44,16 @@ function displayService(){
     });
 }
 
-burger.addEventListener('click', burgerToggle);
+mobileButton.addEventListener('click', toggleNav);
+
+mainNav.addEventListener('click', function(event) {
+    if(event.target.getAttribute('href')) toggleNav();
+});
+
+// window.addEventListener('resize', function(event){
+//     if(window.innerWidth >= 768){
+
+//     }
+// });
 
 displayService();
