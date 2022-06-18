@@ -40,9 +40,9 @@ function displayService(){
             modal.classList.add('modalServices');
             const image =  service.querySelector('.card img');
             HTML += `<div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>`;
-            HTML += `<div class="backModalImage"><img src="${image.getAttribute('src')}"></div>`;
             HTML += `<div class="titleModal">${service.querySelector('.card-ttl').innerText}</div>`;
             HTML += `<div class="textModal">${service.querySelector('.card-ttl').dataset.text}</div>`;
+            HTML += `<div class="backModalImage"><img src="${image.getAttribute('src')}"></div>`;
             modal.innerHTML = HTML;
 
             contModal.appendChild(modal);

@@ -740,55 +740,36 @@ body.template-dark {
 
     /* MODAL */
     .contModalServices{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-self: center;
-        width: 93.5%;
-        height: 88rem;
+        display: flex;
+        width: 54rem;
+        height: 945px;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
     }
 
     .modalServices{
-        display: flex;
-        flex-wrap: wrap;
-        justify-self: center;
-        align-content: space-around;
-        justify-content: space-between;
-        width: 90%;
-        height: 81.5rem;
-        background-color: var(--black-color);
+        width: 50rem;
+        height: 73.75rem;
     }
-    .titleModal{
-        width: 45vw;
-        text-align: center;
-        font-size: 5vw;
-        margin: -20vw 0 0 0;
-    }
-    .textModal{
-        margin-bottom: 35rem;
-        font-weight: normal;
-        font-size: 4vw;
-    }
-
     .backModalImage{
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        width: 85%;
-        height: 90%;
+        left: 15vw;
+        bottom: 10vh;
     }
     .backModalImage img{
-        display: flex;
-        align-self: center;
-        width: 80%;
-        height: auto;
-        opacity: 0.7;
+        width: 90%;
     }
+    .titleModal{
+        width: 25rem;
+        margin-bottom: 29vh;
+        text-align: center;
+    }
+    .textModal{
+        margin-bottom: 40vh;
+        font-weight: normal;
+    }
+
     .close{
-       
-        display: flex;
-        margin: 1vw 0 0 0;
-        justify-content: flex-end;
-        width: 80vw;
-        height: 5vh;
+        margin: -18rem 1rem 0 0;
     }
 }
