@@ -649,8 +649,8 @@ body.template-dark {
     display: flex;
     align-content: center;
     justify-content: center;
-    width: 113.25rem;
-    height: 38.75rem;
+    width: 71%;
+    height: 50%;
 }
 .modalServices{
     display: flex;
@@ -658,21 +658,18 @@ body.template-dark {
     align-self: center;
     background: var(--black-color);
     justify-content: center;
-    padding: 0.5%;
-    font-size: 2rem;
-    width: 105rem;
-    height: 33.33rem;
+    width: 95.5%;
+    height: 85%;
 }
 .backModalImage{
     position: absolute;
     z-index: 79;
-    opacity: 0.2;
+    opacity: 0.15;
 }
 .backModalImage img{
     display: flex;
-    flex-direction: row;
-    left: 0;
-    width: 29.83rem;
+    margin-left: 4%;
+    width: 70%;
     height: auto;
 }
 .titleModal{
@@ -682,7 +679,7 @@ body.template-dark {
     color: var(--secondary-color);
     padding: 1% 0 5.5% 0;
     justify-self: flex-start;
-    font-size: 115%;
+    font-size: 2vw;
     font-family: "Franklin Gothic Heavy";
 }
 .textModal{
@@ -692,15 +689,20 @@ body.template-dark {
     justify-self: flex-end;
     text-align: center;
     width: 76%;
+    font-size: 1.5vw;
 }
 .close{
     color: white;
-    margin: -8vh 0.5vh 0 0;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    width: 99%;
+    height: 7%;
 }
 .close i{
-    right: 0;
-    width: 20px;
+    top: 0;
+    margin: -0.5% 0 0 0;
+    font-size: 1.5vw;
+    width: 2%;
     height: auto;
 }
 
@@ -784,11 +786,16 @@ body.template-dark {
         opacity: 0.7;
     }
     .close{
-       
         display: flex;
         margin: 1vw 0 0 0;
         justify-content: flex-end;
         width: 80vw;
-        height: 5vh;
+        height: 3vh;
+    }
+    .close i{
+        top: 0;
+        margin-right: 0.5vw;
+        font-size: 3vw;
+        height: auto;
     }
 }
