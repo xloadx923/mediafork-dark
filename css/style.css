@@ -130,7 +130,9 @@ body.template-dark {
 }
 
 /* HEADER -> NAV */
-
+body.active{
+    overflow-y: hidden;
+}
 .nav-burger {
     font-size: 3rem;
     color: var(--primary-color);
@@ -641,34 +643,35 @@ body.template-dark {
     }
 }
 
-/* MES SERVICES */
+/* MES SERVICES - MODAL */
 
 .contModalServices{
-    position: absolute;
+    position: fixed;
+    top: 7vh;
+    left: 0;
     z-index: 80;
     display: flex;
     align-content: center;
     justify-content: center;
-    width: 71%;
-    height: 46.5%;
+    width: 100vw;
+    height: 93vh;
 }
 .modalServices{
     display: flex;
     flex-direction: column;
     align-self: center;
+    justify-content: space-between;
     background: var(--black-color);
-    justify-content: center;
-    width: 95.5%;
-    height: 85%;
+    width: 67vw;
+    height: 39vh;
 }
 .backModalImage{
     position: absolute;
     z-index: 79;
+    display: flex;
     opacity: 0.15;
 }
 .backModalImage img{
-    display: flex;
-    margin-left: 4%;
     width: 70%;
     height: auto;
 }
@@ -677,125 +680,26 @@ body.template-dark {
     align-self: center;
     font-weight: bold;
     color: var(--secondary-color);
-    padding: 1% 0 5.5% 0;
-    justify-self: flex-start;
-    font-size: 2vw;
+    font-size: 2.5rem;
     font-family: "Franklin Gothic Heavy";
 }
 .textModal{
     display: flex;
     align-self: center;
-    padding: 1.5rem 0 6.5rem 0;
     justify-self: flex-end;
     text-align: center;
-    width: 76%;
-    font-size: 1.5vw;
+    width: 70rem;
+    font-size: 2rem;
+    margin: 7rem 0 15rem 0;
 }
 .close{
-    color: white;
     display: flex;
     justify-content: flex-end;
-    width: 99%;
-    height: 7%;
+    width: 100%;
+    height: 25px;
+    color: white;
 }
 .close i{
-    top: 0;
-    margin: -2% 0 0 0;
     font-size: 1.5vw;
-    width: 2%;
-    height: auto;
-}
-
-@media screen and (max-width: 767px) {
-    .button-scroll.active{
-        transform: none;
-        background-color: var(--secondary-color);
-    }
-    body.overflow{
-        overflow-y:hidden;
-    }
-    /* MENU */
-    .nav-list{
-        position: absolute;
-        z-index: -1;
-        top: -100vh;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        text-align: center;
-        background-color: var(--black-transparent);
-        transition: top var(--transition-duration) var(--transition-function);
-    }
-    .nav-list.display{
-        top: calc(6rem + 1px);
-    }
-    .nav-item{
-        width: 100%;
-        border-bottom: solid gray 1px;
-    }
-    .nav-link{
-        display: block;
-        color: #fff;
-        font-size: 2rem;
-        padding: 2rem 0;
-    }
-
-    /* MODAL */
-    .contModalServices{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-self: center;
-        width: 93.5%;
-        height: 88rem;
-    }
-
-    .modalServices{
-        display: flex;
-        flex-wrap: wrap;
-        justify-self: center;
-        align-content: space-around;
-        justify-content: space-between;
-        width: 90%;
-        height: 81.5rem;
-        background-color: var(--black-color);
-    }
-    .titleModal{
-        width: 45vw;
-        text-align: center;
-        font-size: 5vw;
-        margin: -20vw 0 0 0;
-    }
-    .textModal{
-        margin-bottom: 35rem;
-        font-weight: normal;
-        font-size: 4vw;
-    }
-
-    .backModalImage{
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        width: 85%;
-        height: 90%;
-    }
-    .backModalImage img{
-        display: flex;
-        align-self: center;
-        width: 80%;
-        height: auto;
-        opacity: 0.7;
-    }
-    .close{
-        display: flex;
-        margin: 1vw 0 0 0;
-        justify-content: flex-end;
-        width: 80vw;
-        height: 3vh;
-    }
-    .close i{
-        top: 0;
-        margin-right: 0.5vw;
-        font-size: 3vw;
-        height: auto;
-    }
+    margin: 0.5rem 0.5rem 0 0;
 }
