@@ -12,7 +12,7 @@ function toggleClass(racine,obj,state){
 
 /* BONUS POUR EVITER UN VILAIN GROS BOUTON ORANGE SUR LA VERSION MOBILE */
 function bodyToggle(){
-    toggleClass(document,'body','active');
+    toggleClass(document,'body.template-dark','active');
 }
 function modifButton(){
     const buttonScroll = document.querySelector('.button-scroll');
@@ -64,6 +64,10 @@ mainNav.addEventListener('click', function(event) {
     if(event.target.getAttribute('href')) toggleNav();
 });
 
+const portfolioImgs = document.querySelectorAll('.portfolio-grid li a');
+portfolioImgs.forEach( function(portfolioImg){
+    portfolioImg.addEventListener('click', event => event.preventDefault());
+});
 // window.addEventListener('resize', function(event){
 //     if(window.innerWidth >= 768){
 
