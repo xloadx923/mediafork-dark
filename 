@@ -1,0 +1,267 @@
+[33mcommit cd106cb988710e6541eb09da25c0a69d18e77f01[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Yann Guichard <xloadx923@msn.com>
+Date:   Tue Jun 21 08:03:07 2022 +0200
+
+    Css modified
+
+[33mcommit 6a508b7b62c96c7e2c18ab68ae881b72c16498a1[m
+Author: Yann Guichard <xloadx923@msn.com>
+Date:   Thu Jun 16 16:27:13 2022 +0200
+
+    create modal services and 'desactivate' the other services
+
+[33mcommit ebf023c848dcc4baeaaa1bae8ae43db991ddc80b[m
+Author: Yann Guichard <xloadx923@msn.com>
+Date:   Thu Jun 16 14:37:26 2022 +0200
+
+    create css roots values --dark-black-transparent + --black-color
+
+[33mcommit de150ba63429dab65d784721ca483e2265315b34[m
+Author: Yann Guichard <xloadx923@msn.com>
+Date:   Thu Jun 16 14:35:47 2022 +0200
+
+    add dataset-text to .card.ttl
+
+[33mcommit b79491c62ca56cbe83137953ea15610ecd1ec0cf[m
+Author: Yann Guichard <xloadx923@msn.com>
+Date:   Wed Jun 15 23:21:27 2022 +0200
+
+    modification of the function toggleClass
+
+[33mcommit 093946ceaf2400a14832e110f79e95841a65a992[m
+Author: Yann Guichard <xloadx923@msn.com>
+Date:   Wed Jun 15 23:18:31 2022 +0200
+
+    add two functions (toggleClass + burgerToggle) to toggle all menu's elements
+
+[33mcommit 2ea241c44025c3969b381f1968b6b7810a0e2e98[m
+Author: Yann Guichard <xloadx923@msn.com>
+Date:   Wed Jun 15 23:07:46 2022 +0200
+
+    State of the overflow is reactivate
+
+[33mcommit f6f2b2e64dcfc8b53938eb27509c7cb7155c6855[m
+Author: Yann Guichard <xloadx923@msn.com>
+Date:   Wed Jun 15 22:56:07 2022 +0200
+
+    apply background transparent to navList active + layout's li links
+
+[33mcommit 186253153345d43f6fd14cae0c0f8e174ae63f2f[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Yann Guichard <xloadx923@msn.com>
+Date:   Wed Jun 15 17:00:42 2022 +0200
+
+    add menu under header-container
+
+[33mcommit 96591cb562020500da6876786510ac24e2a787db[m
+Author: Yann Guichard <xloadx923@msn.com>
+Date:   Wed Jun 15 14:50:21 2022 +0200
+
+    add a folder and file for the javascript
+
+[33mcommit 5275cea6084dddcc63e35616573adfaed3b52110[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 21 16:19:34 2022 +0200
+
+    variable for transition parameters
+
+[33mcommit d96fb9ce151d85d48fc13abda9796790409a5c55[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 21 16:06:05 2022 +0200
+
+    change link style when active
+
+[33mcommit 5d63b4b861cc32d25d21cb77b8906468f300923b[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 21 15:46:56 2022 +0200
+
+    button-scroll hover style with transform
+
+[33mcommit 3098863659ef81950016c5728c27a0b50f90cb47[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 21 15:44:13 2022 +0200
+
+    remove header from hero-banner
+
+[33mcommit b8361841c848498b743f02b97f1d3bcc3c99f018[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Tue May 17 07:26:44 2022 +0200
+
+    logo size in rem
+
+[33mcommit 268e03a6655042788d95f963acce7ac224f1c220[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Tue May 17 07:25:43 2022 +0200
+
+    remove useless header height
+
+[33mcommit c55b9c2d623485614a4f1b43b030a7f42bcf8953[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Mon May 16 11:28:23 2022 +0200
+
+    move body properties to a template class
+
+[33mcommit 0aa8f42207642c8e056eb2fc7fb54c6cb753cdc0[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sun May 15 02:41:40 2022 +0200
+
+    protfolio link bg style
+
+[33mcommit 94a33aa861660a9321708bc04c2bbbec6162f2b7[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sun May 15 01:09:39 2022 +0200
+
+    favicon
+
+[33mcommit 7e596174f7a69b212ef79900763804be71d88b0b[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sun May 15 00:05:13 2022 +0200
+
+    background hero banner for mobile
+
+[33mcommit 3684cfc41b902021d31e14fe68acb123017e361b[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 23:58:44 2022 +0200
+
+    change protfolio image size
+
+[33mcommit e2556eb2619e7565c1abeb1a1d86e7123417407c[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 23:22:56 2022 +0200
+
+    solving image space in portfolio
+
+[33mcommit 023dadecfae5cc2baf1b8940cb676c3a0f4a731f[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 22:27:53 2022 +0200
+
+    change portfolio link style
+
+[33mcommit 19525f486bc1216e84e16c5dd925d37eb50faa95[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 21:48:32 2022 +0200
+
+    global cleaning
+
+[33mcommit 75898766e855fd4201a36142c3c5ef6e4ac0a94f[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 18:42:19 2022 +0200
+
+    rename grey colors
+
+[33mcommit 93c8972eecce65b4ce2c82d7e9001727da5d4fbd[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 16:19:42 2022 +0200
+
+    legal footer link style fix
+
+[33mcommit 77f0f81c86033616aca12f2c3459a67a20181bd1[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 16:16:46 2022 +0200
+
+    css cleaning
+
+[33mcommit 6141f508aad0dd5831b224d39e4db2c2248b44ec[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 16:13:00 2022 +0200
+
+    color cleaning with root var
+
+[33mcommit f983cfb8b1419827a4e391a5b55baaf27ecb7089[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 15:20:27 2022 +0200
+
+    card text too long
+
+[33mcommit fd3176ecfe9d9649d0dd6167f18d975c735399e2[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 15:05:23 2022 +0200
+
+    footer background and card break words
+
+[33mcommit 805ef29c13c6848e121868f2189d4def1613ec2d[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 14:56:38 2022 +0200
+
+    footer RWD structure
+
+[33mcommit af79ce9526cbc99f0342731f9f000bed7238e94f[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 14:50:40 2022 +0200
+
+    footer structure and legal links style
+
+[33mcommit 05a2fbfffeb4eab0d30ee920326237156978fdb0[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 14:42:12 2022 +0200
+
+    footer legal links html
+
+[33mcommit 9bf80df60f8daa5955d61552cfe57edc0df0bd3e[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 14:38:01 2022 +0200
+
+    social links style with bubble
+
+[33mcommit 3ebb55cf7c3fbbfadf758f594f2686e6dcd2f833[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 13:44:57 2022 +0200
+
+    link in header (logo, burger) and text for services
+
+[33mcommit 55c8478fad186e6203ece4375db1a8c6b9b63222[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 13:33:08 2022 +0200
+
+    main nav link style with hover and transition
+
+[33mcommit f2ee4907f23376fa00f7249af79079d27e910c6b[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 13:32:56 2022 +0200
+
+    main nav link style with hover and transition
+
+[33mcommit e85bcd6fac5dcae32ee5009ae45254cfae8e8fd0[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 13:11:22 2022 +0200
+
+    footer HTML with social icons
+
+[33mcommit 42c7ec0687a38a61019c21f0b06ff3116b574091[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 13:07:35 2022 +0200
+
+    adapt global transitions
+
+[33mcommit f5b6ab293cbabbe72e045f5642a75f7149c056f2[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 12:37:51 2022 +0200
+
+    about text desktop spacing
+
+[33mcommit 618ddae00151e224bf469371d93677a049e26c46[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 12:35:00 2022 +0200
+
+    scroll button hover styling
+
+[33mcommit aa77df768a1ec4ed564875631cefe08d8ff423fc[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 12:29:33 2022 +0200
+
+    contact form grid and button style
+
+[33mcommit 4d89447586f8cbde355ff777b6ac1f604bfb0359[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 12:03:21 2022 +0200
+
+    contact form style mobile only
+
+[33mcommit 438fd59f45e664a311e1c321cbfff7c1c55ffffc[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   Sat May 14 11:08:48 2022 +0200
+
+    contact form html
+
+[33mcommit 0910b024b91ca81d1957bae552b5781e20fd2414[m
+Author: Guillaume <guillaumebelleuvre@gmail.com>
+Date:   

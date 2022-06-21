@@ -15,7 +15,7 @@
     --light-grey: #7a8085;
 
     /* NavLIst */
-    --dark-black-transparent: rgba(0, 0, 0, 0.7);
+    --black-transparent: rgba(0, 0, 0, 0.75);
 
     /* Services */
 
@@ -130,55 +130,60 @@ body.template-dark {
 }
 
 /* HEADER -> NAV */
-
+body.active{
+    overflow-y: hidden;
+}
 .nav-burger {
     font-size: 3rem;
     color: var(--primary-color);
     cursor: pointer;
 }
 
-.nav-list {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-}
-
-.nav-link {
-    display: inline-block;
-    position: relative;
-    color: #fff;
-    font-size: 1.5rem;
-    transition: border var(--transition-duration) var(--transition-function);
-}
-
-.nav-link::after {
-    content: "";
-    display: block;
-    height: .25rem;
-    width: 0;
-    position: absolute;
-    left: 0;
-    bottom: -.5rem;
-    background-color: var(--primary-color);
-    transition: width .3s ease;
-}
-
-.nav-link.active::after, .nav-link:hover::after  {
-    width: 100%;
-}
-
 .nav-link.active {
     color: var(--transparent-white);
 }
+.nav-link{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
 
 @media screen and (min-width: 768px) {
+    .nav-list {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
     .nav-burger {
         display: none;
     }
     .nav-list {
         display: flex;
     }
+
+    .nav-link {
+        display: inline-block;
+        position: relative;
+        transition: border var(--transition-duration) var(--transition-function);
+    }
+
+    .nav-link::after {
+        content: "";
+        display: block;
+        height: .25rem;
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: -.5rem;
+        background-color: var(--primary-color);
+        transition: width .3s ease;
+    }
+
+    .nav-link.active::after, .nav-link:hover::after  {
+        width: 100%;
+    }
+
 }
 
 /* HERO BANNER */
@@ -238,7 +243,6 @@ body.template-dark {
     bottom: 2rem;
     transition: background var(--transition-duration), transform var(--transition-duration);
     transition-timing-function: var(--transition-function);
-    
 }
 
 .button-scroll:hover {
@@ -276,7 +280,7 @@ body.template-dark {
 
 .about-text-xl {
     font-size: 3rem;
-    font-weight: bold;  
+    font-weight: bold;
 }
 .about-text-highlight {
     display: block;
@@ -423,7 +427,7 @@ body.template-dark {
     padding: 1rem;
     font-weight: bold;
     font-size: 1.5rem;
-    color: #fff; 
+    color: #fff;
     background-color: var(--dark-grey-transparent);
 }
 
@@ -433,12 +437,12 @@ body.template-dark {
         opacity: 0;
         transition: opacity var(--transition-duration) var(--transition-function);
     }
-    .portfolio-block:hover {    
+    .portfolio-block:hover {
         opacity: 1;
     }
     .portfolio-brand {
         font-size: 2rem;
-        color: #fff; 
+        color: #fff;
     }
 }
 
@@ -508,7 +512,7 @@ body.template-dark {
     background-color: var(--secondary-color);
     transition: background var(--transition-duration) var(--transition-function);
     border-radius: .5rem;
-}   
+}
 
 .button:hover {
     background-color: var(--primary-color);
@@ -639,37 +643,39 @@ body.template-dark {
     }
 }
 
-/* MES SERVICES */
+/* MES SERVICES - MODAL */
+.section-card{
+    position: relative;
+}
 
 .contModalServices{
-    position: absolute;
-    z-index: 480;
+    position: fixed;
+    top: 7vh;
+    left: 0;
+    z-index: 80;
     display: flex;
     align-content: center;
     justify-content: center;
-    height: 465px;
+    width: 100vw;
+    height: 93vh;
 }
 .modalServices{
     display: flex;
     flex-direction: column;
     align-self: center;
+    justify-content: space-between;
     background: var(--black-color);
-    justify-content: center;
-    padding: 0.5%;
-    font-size: 175%;
-    width: 95%;
-    height: 400px;
+    width: 67vw;
+    height: 39vh;
 }
 .backModalImage{
     position: absolute;
-    z-index: -1;
-    opacity: 0.2;
+    z-index: 79;
+    display: flex;
+    opacity: 0.15;
 }
 .backModalImage img{
-    display: flex;
-    flex-direction: row;
-    left: 0;
-    width: 60%;
+    width: 70%;
     height: auto;
 }
 .titleModal{
@@ -677,24 +683,27 @@ body.template-dark {
     align-self: center;
     font-weight: bold;
     color: var(--secondary-color);
-    padding: 1% 0 5.5% 0;
-    justify-self: flex-start;
-    font-size: 115%;
+    font-size: 2.5rem;
+    font-family: "Franklin Gothic Heavy";
 }
 .textModal{
     display: flex;
     align-self: center;
-    padding: 1.5rem 0 6.5rem 0;
     justify-self: flex-end;
     text-align: center;
-    width: 76%;
+    width: 70rem;
+    font-size: 2rem;
+    margin: 7rem 0 15rem 0;
 }
 .close{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 25px;
     color: white;
-    margin-top: -9.5%;
-    text-align: right;
 }
 .close i{
+<<<<<<< HEAD
     right: 0;
     width: 20px;
     height: auto;
@@ -747,4 +756,8 @@ body.template-dark {
         border-top: none;
     }
 
+=======
+    font-size: 1.5vw;
+    margin: 0.5rem 0.5rem 0 0;
+>>>>>>> 46a1d0ee7ab9aedb91931bf13512cc9518a31350
 }
